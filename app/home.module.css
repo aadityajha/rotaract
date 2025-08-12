@@ -56,12 +56,12 @@
 .secondary {
     background-color: transparent;
     color: #4b5563;
-    border: 1px solid #d1d5db;
+    /* border: 1px solid #d1d5db; */
 }
 
-.secondary:hover {
+/* .secondary:hover {
     background-color: #f3f4f6;
-}
+} */
 
 .why {
     padding: 5rem 1.5rem;

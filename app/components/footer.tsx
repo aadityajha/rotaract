@@ -22,7 +22,6 @@ export default function Footer() {
                         <li><Link href="/" className={styles.link}>Home</Link></li>
                         <li><Link href="/about" className={styles.link}>About Us</Link></li>
                         <li><Link href="/#" className={styles.link}>Events</Link></li>
-                        <li><Link href="/#" className={styles.link}>Gallery</Link></li>
                     </ul>
                 </nav>
 

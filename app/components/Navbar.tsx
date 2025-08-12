@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState } from 'react';
 import styles from './Navbar.module.css';
 
@@ -14,7 +15,15 @@ export default function Navbar() {
     <>
       <nav className={styles.navbar}>
         <div className={styles.branding}>
-          <Link href="/" className={styles.logo}>CMC Rotaract</Link>
+          <Link href="/" className={styles.logo}>
+            <Image
+              src="/icon.svg"
+              alt="CMC Rotaract Logo"
+              width={40}
+              height={40}
+              priority
+            />
+          </Link>
         </div>
 
         <div className={styles.desktopMenu}>

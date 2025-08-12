@@ -12,11 +12,11 @@
 }
 
 .section {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 
 .sectionTitle {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 1.5rem;
     color: var(  --color-accent);
@@ -26,7 +26,7 @@
 
 .boardGrid {
     display: grid;
-    gap: 2rem;
+    gap: 1.8rem;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
@@ -39,7 +39,7 @@
 .boardCard,
 .card {
     background-color: #fff;
-    padding: 1.5rem;
+    padding: 1rem;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgb(0 0 0 / 0.05);
     text-align: center;

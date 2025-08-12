@@ -11,7 +11,7 @@ type Socials = {
 type Member = {
     name: string;
     role: string;
-    image: string;
+    image?: string;  // optional since we override with fixed image
     quote?: string;
     socials?: Socials;
 };
@@ -20,7 +20,6 @@ const boardMembers: Member[] = [
     {
         name: 'Aaditya Jha',
         role: 'President',
-        image: '/team/aaditya.jpg',
         quote: 'Leading with vision and passion for service.',
         socials: {
             instagram: 'https://instagram.com/aaditya',
@@ -29,9 +28,8 @@ const boardMembers: Member[] = [
         },
     },
     {
-        name: 'alina',
+        name: 'Alina',
         role: 'Vice President',
-        image: '/team/salina.jpg',
         quote: 'Committed to empowering youth through action.',
         socials: {
             instagram: 'https://instagram.com/salina',
@@ -40,13 +38,11 @@ const boardMembers: Member[] = [
     {
         name: 'Rohan Shrestha',
         role: 'Secretary',
-        image: '/team/rohan.jpg',
         quote: 'Bringing structure and clarity to every initiative.',
     },
     {
         name: 'Prakriti Sharma',
         role: 'Treasurer',
-        image: '/team/prakriti.jpg',
         quote: 'Ensuring our resources fuel the greatest impact.',
     },
 ];
@@ -55,7 +51,6 @@ const generalMembers: Member[] = [
     {
         name: 'Sushant KC',
         role: 'Community Service Director',
-        image: '/team/sushant.jpg',
         socials: {
             linkedin: 'https://linkedin.com/in/sushantkc',
         },
@@ -63,27 +58,22 @@ const generalMembers: Member[] = [
     {
         name: 'Anusha Adhikari',
         role: 'International Service Director',
-        image: '/team/anusha.jpg',
     },
     {
         name: 'Bibek Basnet',
         role: 'Professional Development Director',
-        image: '/team/bibek.jpg',
     },
     {
         name: 'Nisha Gurung',
         role: 'Club Service Director',
-        image: '/team/nisha.jpg',
     },
     {
         name: 'Dipesh Thapa',
         role: 'Public Relations Officer',
-        image: '/team/dipesh.jpg',
     },
     {
         name: 'Shristi Koirala',
         role: 'Membership Chair',
-        image: '/team/shristi.jpg',
     },
 ];
 
@@ -105,8 +95,9 @@ export default function Team() {
                 <div className={styles.boardGrid}>
                     {boardMembers.map((member, idx) => (
                         <article className={styles.boardCard} key={idx}>
+                            {/* Hardcoded same image for everyone */}
                             <Image
-                                src={member.image}
+                                src="/pic.png"
                                 alt={`Portrait of ${member.name}`}
                                 className={styles.avatarLarge}
                                 loading="lazy"
@@ -168,8 +159,9 @@ export default function Team() {
                 <div className={styles.grid}>
                     {generalMembers.map((member, idx) => (
                         <article className={styles.card} key={idx}>
+                            {/* Hardcoded same image for everyone */}
                             <Image
-                                src={member.image}
+                                src="/pic.png"
                                 alt={`Portrait of ${member.name}`}
                                 className={styles.avatar}
                                 loading="lazy"
