@@ -1,4 +1,3 @@
-// app/join/page.tsx
 import Link from 'next/link';
 import styles from './join.module.css';
 
