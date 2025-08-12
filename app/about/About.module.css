@@ -1,0 +1,73 @@
+.main {
+    font-family: 'Inter', sans-serif;
+    padding: 4rem 1.5rem;
+    background-color: #ffffff;
+    color: #1f2937;
+    line-height: 1.7;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.hero h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.hero p {
+    color: #6b7280;
+    max-width: 650px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+}
+
+/* Section Base */
+.section {
+    max-width: 800px;
+    margin: 0 auto 4rem;
+    text-align: center;
+}
+
+.sectionAlt {
+    max-width: 800px;
+    margin: 0 auto 4rem;
+    text-align: center;
+    background-color: #f9fafb;
+    padding: 2.5rem 1.5rem;
+    border-radius: 1rem;
+}
+
+.sectionTitle {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+/* Paragraph styling */
+.section p,
+.sectionAlt p {
+    color: #4b5563;
+}
+
+/* CTA Button */
+.ctaBtn {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.85rem 1.8rem;
+    background-color: #9c0033;
+    /* Rotaract maroon */
+    color: white;
+    border-radius: 9999px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.ctaBtn:hover {
+    background-color: #b8003d;
+    transform: scale(1.03);
+}

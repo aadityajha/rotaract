@@ -1,0 +1,103 @@
+.main {
+    padding: 5rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+    color: #1f2937;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section {
+    margin-bottom: 4rem;
+}
+
+.sectionTitle {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: var(  --color-accent);
+    /* golden accent */
+    text-align: center;
+}
+
+.boardGrid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.boardCard,
+.card {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 0.05);
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.boardCard:hover,
+.card:hover {
+    box-shadow: 0 6px 12px rgb(0 0 0 / 0.15);
+}
+
+.avatarLarge {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 3px solid var(--color-accent);
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 0.75rem;
+    border: 2px solid var(--color-accent);
+}
+
+.role {
+    font-style: italic;
+    color: #6b7280;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.quote {
+    font-style: italic;
+    color: #4b5563;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.socialIcon {
+    color: var(--color-accent);
+    font-size: 1.3rem;
+    transition: color 0.3s ease;
+}
+
+.socialIcon:hover,
+.socialIcon:focus {
+    color: var(--color-accent-hover);
+    outline: none;
+}

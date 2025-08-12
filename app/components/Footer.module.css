@@ -1,0 +1,136 @@
+
+
+.footer {
+    background-color: #fff;
+    border-top: 1px solid var(--border-color);
+    color: var(--text-color);
+    padding: 4rem 2rem 2rem;
+    margin-top: 6rem;
+    font-family: var(--font-family);
+    user-select: none;
+}
+
+.footerContainer {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    font-size: 1rem;
+}
+
+@media (min-width: 640px) {
+    .footerContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .footerContainer {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.branding {
+    max-width: 260px;
+}
+
+.brandingTitle {
+    color: var(--primary-color);
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.brandingText {
+    color: var(--text-muted);
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+.section {
+    /* for other nav sections */
+}
+
+.sectionTitle {
+    color: #374151;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 1.1rem;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list li {
+    margin-bottom: 0.6rem;
+}
+
+.link {
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: color 0.25s ease;
+    /* font-weight: 600; */
+    font-size: 1rem;
+}
+
+.link:hover,
+.link:focus-visible {
+    color: var(--primary-color);
+    text-decoration: underline;
+    outline: none;
+}
+
+.iconList {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.iconList li {
+    margin: 0;
+}
+
+.iconLink {
+    font-size: 1.4rem;
+    /* Bigger and consistent */
+    color: var(--primary-color);
+    transition: color 0.25s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconLink:hover,
+.iconLink:focus-visible {
+    color: var(--primary-hover);
+    outline: none;
+}
+
+.footerBottom {
+    border-top: 1px solid var(--border-color);
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    font-weight: 500;
+}
+
+.footerBottomStrong {
+    color: var(--primary-color);
+    font-weight: 700;
+}

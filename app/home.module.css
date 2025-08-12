@@ -1,0 +1,84 @@
+/* app/home/home.module.css */
+
+.main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    color: #1f2937;
+}
+
+.hero {
+    padding: 8rem 1.5rem 5rem;
+    text-align: center;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    font-size: 1.125rem;
+    color: #6b7280;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    border-radius: 9999px;
+    text-decoration: none;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.primary {
+    background-color: #1f2937;
+    color: #fff;
+    border: 1px solid transparent;
+}
+
+.primary:hover {
+    background-color: #111827;
+}
+
+.secondary {
+    background-color: transparent;
+    color: #4b5563;
+    border: 1px solid #d1d5db;
+}
+
+.secondary:hover {
+    background-color: #f3f4f6;
+}
+
+.why {
+    padding: 5rem 1.5rem;
+    background-color: #f9fafb;
+    text-align: center;
+}
+
+.why h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.why p {
+    color: #6b7280;
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 1.7;
+}

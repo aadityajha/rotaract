@@ -1,0 +1,89 @@
+.main {
+    font-family: 'Inter', sans-serif;
+    max-width: 900px;
+    margin: 6rem auto 4rem;
+    padding: 0 1.5rem;
+    color: #1f2937;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.header h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 700;
+    color: #9c0033;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.header p {
+    font-size: 1.125rem;
+    color: #4b5563;
+    font-weight: 500;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.projectsGrid {
+    display: grid;
+    gap: 2.5rem;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 600px) {
+    .projectsGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.projectCard {
+    background-color: #f9fafb;
+    border-radius: 1rem;
+    padding: 2rem 1.5rem;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.projectCard:hover,
+.projectCard:focus-within {
+    box-shadow: 0 8px 24px rgba(156, 0, 51, 0.2);
+}
+
+.projectCard h2 {
+    color: #9c0033;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.projectCard p {
+    color: #4b5563;
+    font-weight: 500;
+    flex-grow: 1;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+.learnMore {
+    align-self: flex-start;
+    color: #9c0033;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.25s ease;
+}
+
+.learnMore:hover,
+.learnMore:focus-visible {
+    color: #b8003d;
+    text-decoration: underline;
+}
