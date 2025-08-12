@@ -38,7 +38,7 @@ export default function About() {
             <section className={styles.section}>
                 <h2 className={styles.sectionTitle}>Be Part of Our Journey</h2>
                 <p>
-                    Whether you’re looking to serve the community, develop your leadership skills,
+                    Whether you&apos;re looking to serve the community, develop your leadership skills,
                     or connect with inspiring individuals, CMC Rotaract welcomes you.
                 </p>
                 <a href="/join" className={styles.ctaBtn}>Join Us</a>
