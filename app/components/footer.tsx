@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 import styles from './Footer.module.css';
@@ -18,10 +19,10 @@ export default function Footer() {
                 <nav aria-label="Explore links" className={styles.section}>
                     <h3 className={styles.sectionTitle}>Explore</h3>
                     <ul className={styles.list}>
-                        <li><a href="/" className={styles.link}>Home</a></li>
-                        <li><a href="/about" className={styles.link}>About Us</a></li>
-                        <li><a href="/#" className={styles.link}>Events</a></li>
-                        <li><a href="/#" className={styles.link}>Gallery</a></li>
+                        <li><Link href="/" className={styles.link}>Home</Link></li>
+                        <li><Link href="/about" className={styles.link}>About Us</Link></li>
+                        <li><Link href="/#" className={styles.link}>Events</Link></li>
+                        <li><Link href="/#" className={styles.link}>Gallery</Link></li>
                     </ul>
                 </nav>
 
@@ -74,8 +75,8 @@ export default function Footer() {
                 <nav aria-label="Join links" className={styles.section}>
                     <h3 className={styles.sectionTitle}>Join</h3>
                     <ul className={styles.list}>
-                        <li><a href="/join" className={styles.link}>Become a Member</a></li>
-                        <li><a href="/#" className={styles.link}>FAQ</a></li>
+                        <li><Link href="/join" className={styles.link}>Become a Member</Link></li>
+                        <li><Link href="/#" className={styles.link}>FAQ</Link></li>
                     </ul>
                 </nav>
             </div>
