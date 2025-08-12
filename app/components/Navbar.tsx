@@ -47,13 +47,13 @@ export default function Navbar() {
       </nav>
 
       <div className={`${styles.sidebar} ${sidebarOpen ? styles.open : ''}`}>
-        <button
+        {/* <button
           className={styles.closeBtn}
           onClick={closeSidebar}
           aria-label="Close menu"
         >
           &times;
-        </button>
+        </button> */}
         <Link href="/" onClick={closeSidebar}>Home</Link>
         <Link href="/about" onClick={closeSidebar}>About</Link>
         <Link href="/projects" onClick={closeSidebar}>Projects</Link>
