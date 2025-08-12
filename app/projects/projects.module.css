@@ -1,7 +1,7 @@
 .main {
     font-family: 'Inter', sans-serif;
-    max-width: 900px;
-    margin: 6rem auto 4rem;
+    max-width: 1000px;
+    margin: 5rem auto 1rem;
     padding: 0 1.5rem;
     color: #1f2937;
 }
@@ -14,7 +14,6 @@
 .header h1 {
     font-size: clamp(2rem, 5vw, 3rem);
     font-weight: 700;
-    color: #9c0033;
     margin-bottom: 0.5rem;
     letter-spacing: 0.1em;
     text-transform: uppercase;
@@ -35,9 +34,17 @@
     grid-template-columns: 1fr;
 }
 
+/* Adjust grid columns on tablets and above */
 @media (min-width: 600px) {
     .projectsGrid {
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* For bigger screens, optionally 3 columns */
+@media (min-width: 1024px) {
+    .projectsGrid {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
@@ -59,7 +66,6 @@
 }
 
 .projectCard h2 {
-    color: #9c0033;
     font-weight: 700;
     margin-bottom: 1rem;
     font-size: 1.5rem;
@@ -71,11 +77,34 @@
     flex-grow: 1;
     line-height: 1.5;
     margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+/* Make font size slightly smaller on mobile for paragraphs */
+@media (max-width: 480px) {
+    .header p {
+        font-size: 1rem;
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+
+    .projectCard h2 {
+        font-size: 1.25rem;
+    }
+
+    .projectCard p {
+        font-size: 0.9rem;
+    }
+
+    .main {
+        margin: 4rem 1rem 3rem;
+        padding: 0 1rem;
+    }
 }
 
 .learnMore {
     align-self: flex-start;
-    color: #9c0033;
+    /* color: #9c0033; */
     font-weight: 600;
     text-decoration: none;
     font-size: 1rem;

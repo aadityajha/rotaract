@@ -19,8 +19,8 @@ export default function Navbar() {
             <Image
               src="/icon.svg"
               alt="CMC Rotaract Logo"
-              width={40}
-              height={40}
+              width={34}
+              height={34}
               priority
             />
           </Link>
