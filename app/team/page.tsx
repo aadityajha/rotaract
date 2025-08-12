@@ -2,7 +2,21 @@ import Image from 'next/image';
 import { FaInstagram, FaLinkedin, FaGlobe } from 'react-icons/fa';
 import styles from './team.module.css';
 
-const boardMembers = [
+type Socials = {
+    instagram?: string;
+    linkedin?: string;
+    website?: string;
+};
+
+type Member = {
+    name: string;
+    role: string;
+    image: string;
+    quote?: string;
+    socials?: Socials;
+};
+
+const boardMembers: Member[] = [
     {
         name: 'Aaditya Jha',
         role: 'President',
@@ -37,7 +51,7 @@ const boardMembers = [
     },
 ];
 
-const generalMembers = [
+const generalMembers: Member[] = [
     {
         name: 'Sushant KC',
         role: 'Community Service Director',
@@ -102,9 +116,7 @@ export default function Team() {
                             <h3>{member.name}</h3>
                             <p className={styles.role}>{member.role}</p>
                             {member.quote && (
-                                <blockquote className={styles.quote}>
-                                    &quot;{member.quote}&quot;
-                                </blockquote>
+                                <blockquote className={styles.quote}>&quot;{member.quote}&quot;</blockquote>
                             )}
                             {member.socials && (
                                 <div className={styles.socials} aria-label={`${member.name} social profiles`}>
