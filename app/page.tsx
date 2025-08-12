@@ -22,7 +22,7 @@ export default function Home() {
       <section className={styles.why}>
         <h2>Why Choose CMC Rotaract?</h2>
         <p>
-          Leadership here is more than a role — it’s a lifelong commitment to integrity, service, and meaningful collaboration.
+          Leadership here is more than a role &mdash; it&rsquo;s a lifelong commitment to integrity, service, and meaningful collaboration.
           Join us in shaping global citizens empowered to create lasting positive change.
         </p>
       </section>
