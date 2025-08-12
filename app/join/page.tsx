@@ -1,4 +1,5 @@
 // app/join/page.tsx
+import Link from 'next/link';
 import styles from './join.module.css';
 
 export default function JoinPage() {
@@ -19,7 +20,7 @@ export default function JoinPage() {
                 </p>
                 <p className={styles.note}>
                     Meanwhile, feel free to explore our{' '}
-                    <a href="/projects">projects</a> and see what we're all about.
+                    <Link href="/projects">projects</Link> and see what we&apos;re all about.
                 </p>
             </section>
         </main>

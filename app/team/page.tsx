@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { FaInstagram, FaLinkedin, FaGlobe } from 'react-icons/fa';
 import styles from './team.module.css';
 
@@ -77,7 +78,9 @@ export default function Team() {
         <main className={styles.main}>
             <section className={styles.hero}>
                 <h1>Our Team</h1>
-                <p>Meet the passionate individuals driving CMC Rotaract’s mission forward.</p>
+                <p>
+                    Meet the passionate individuals driving CMC Rotaract&rsquo;s mission forward.
+                </p>
             </section>
 
             {/* Board Members */}
@@ -88,16 +91,21 @@ export default function Team() {
                 <div className={styles.boardGrid}>
                     {boardMembers.map((member, idx) => (
                         <article className={styles.boardCard} key={idx}>
-                            <img
+                            <Image
                                 src={member.image}
                                 alt={`Portrait of ${member.name}`}
                                 className={styles.avatarLarge}
                                 loading="lazy"
+                                width={200}
+                                height={200}
                             />
                             <h3>{member.name}</h3>
                             <p className={styles.role}>{member.role}</p>
-                            <blockquote className={styles.quote}>"{member.quote}"</blockquote>
-
+                            {member.quote && (
+                                <blockquote className={styles.quote}>
+                                    &quot;{member.quote}&quot;
+                                </blockquote>
+                            )}
                             {member.socials && (
                                 <div className={styles.socials} aria-label={`${member.name} social profiles`}>
                                     {member.socials.instagram && (
@@ -148,15 +156,16 @@ export default function Team() {
                 <div className={styles.grid}>
                     {generalMembers.map((member, idx) => (
                         <article className={styles.card} key={idx}>
-                            <img
+                            <Image
                                 src={member.image}
                                 alt={`Portrait of ${member.name}`}
                                 className={styles.avatar}
                                 loading="lazy"
+                                width={150}
+                                height={150}
                             />
                             <h3>{member.name}</h3>
                             <p className={styles.role}>{member.role}</p>
-
                             {member.socials && (
                                 <div className={styles.socials} aria-label={`${member.name} social profiles`}>
                                     {member.socials.instagram && (
