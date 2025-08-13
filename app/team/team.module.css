@@ -19,8 +19,7 @@
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 1.5rem;
-    color: var(  --color-accent);
-    /* golden accent */
+    color: var(--color-accent);
     text-align: center;
 }
 
@@ -38,6 +37,8 @@
 
 .boardCard,
 .card {
+    position: relative;
+    /* Needed for badge positioning */
     background-color: #fff;
     padding: 1rem;
     border-radius: 12px;
@@ -100,4 +101,38 @@
 .socialIcon:focus {
     color: var(--color-accent-hover);
     outline: none;
+}
+
+/* ================= Profession Badge Styles ================= */
+.tag {
+    position: absolute;
+    /* Float in top-right */
+    top: 10px;
+    right: 10px;
+    display: inline-block;
+    padding: 4px 10px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 999px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Profession Gradient Colors */
+.mbbs {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+}
+
+.nursing {
+    background: linear-gradient(135deg, #ff69b4, #d63384);
+}
+
+.bds {
+    background: linear-gradient(135deg, #ff9800, #ef6c00);
+}
+
+.bmlt {
+    background: linear-gradient(135deg, #8e2de2, #4a00e0);
 }

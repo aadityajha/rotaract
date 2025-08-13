@@ -14,12 +14,14 @@ type Member = {
     image?: string;  // optional since we override with fixed image
     quote?: string;
     socials?: Socials;
+    profession?: string; // ✅ New field
 };
 
 const boardMembers: Member[] = [
     {
         name: 'Aaditya Jha',
         role: 'President',
+        profession: 'MBBS',
         quote: 'Leading with vision and passion for service.',
         socials: {
             instagram: 'https://instagram.com/aaditya',
@@ -30,6 +32,7 @@ const boardMembers: Member[] = [
     {
         name: 'Alina',
         role: 'Vice President',
+        profession: 'BDS',
         quote: 'Committed to empowering youth through action.',
         socials: {
             instagram: 'https://instagram.com/salina',
@@ -38,11 +41,13 @@ const boardMembers: Member[] = [
     {
         name: 'Rohan Shrestha',
         role: 'Secretary',
+        profession: 'Nursing',
         quote: 'Bringing structure and clarity to every initiative.',
     },
     {
         name: 'Prakriti Sharma',
         role: 'Treasurer',
+        profession: 'BMLT',
         quote: 'Ensuring our resources fuel the greatest impact.',
     },
 ];
@@ -51,6 +56,7 @@ const generalMembers: Member[] = [
     {
         name: 'Sushant KC',
         role: 'Community Service Director',
+        profession: 'MBBS',
         socials: {
             linkedin: 'https://linkedin.com/in/sushantkc',
         },
@@ -58,22 +64,27 @@ const generalMembers: Member[] = [
     {
         name: 'Anusha Adhikari',
         role: 'International Service Director',
+        profession: 'Nursing',
     },
     {
         name: 'Bibek Basnet',
         role: 'Professional Development Director',
+        profession: 'BDS',
     },
     {
         name: 'Nisha Gurung',
         role: 'Club Service Director',
+        profession: 'MBBS',
     },
     {
         name: 'Dipesh Thapa',
         role: 'Public Relations Officer',
+        profession: 'BMLT',
     },
     {
         name: 'Shristi Koirala',
         role: 'Membership Chair',
+        profession: 'Nursing',
     },
 ];
 
@@ -95,7 +106,6 @@ export default function Team() {
                 <div className={styles.boardGrid}>
                     {boardMembers.map((member, idx) => (
                         <article className={styles.boardCard} key={idx}>
-                            {/* Hardcoded same image for everyone */}
                             <Image
                                 src="/pic.png"
                                 alt={`Portrait of ${member.name}`}
@@ -104,7 +114,14 @@ export default function Team() {
                                 width={200}
                                 height={200}
                             />
-                            <h3>{member.name}</h3>
+                            <div className={styles.cardHeader}>
+                                <h3>{member.name}</h3>
+                                {member.profession && (
+                                    <span className={`${styles.tag} ${styles[member.profession.toLowerCase()]}`}>
+                                        {member.profession}
+                                    </span>
+                                )}
+                            </div>
                             <p className={styles.role}>{member.role}</p>
                             {member.quote && (
                                 <blockquote className={styles.quote}>&quot;{member.quote}&quot;</blockquote>
@@ -159,7 +176,6 @@ export default function Team() {
                 <div className={styles.grid}>
                     {generalMembers.map((member, idx) => (
                         <article className={styles.card} key={idx}>
-                            {/* Hardcoded same image for everyone */}
                             <Image
                                 src="/pic.png"
                                 alt={`Portrait of ${member.name}`}
@@ -168,7 +184,14 @@ export default function Team() {
                                 width={150}
                                 height={150}
                             />
-                            <h3>{member.name}</h3>
+                            <div className={styles.cardHeader}>
+                                <h3>{member.name}</h3>
+                                {member.profession && (
+                                    <span className={`${styles.tag} ${styles[member.profession.toLowerCase()]}`}>
+                                        {member.profession}
+                                    </span>
+                                )}
+                            </div>
                             <p className={styles.role}>{member.role}</p>
                             {member.socials && (
                                 <div className={styles.socials} aria-label={`${member.name} social profiles`}>
