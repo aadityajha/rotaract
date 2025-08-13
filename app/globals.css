@@ -15,20 +15,30 @@
 /* Light Theme Color Palette - Clean, Elegant, and Balanced */
 :root {
   /* Backgrounds and Foregrounds */
-  --color-bg-primary: #ffffff;         /* Main background */
-  --color-text-primary: #171717;       /* Main text color */
-  --color-text-secondary: #4b5563;     /* Secondary text (subtle) */
-  --color-text-muted: #9ca3af;         /* Muted text, less focus */
-  
+  --color-bg-primary: #ffffff;
+  /* Main background */
+  --color-text-primary: #171717;
+  /* Main text color */
+  --color-text-secondary: #4b5563;
+  /* Secondary text (subtle) */
+  --color-text-muted: #9ca3af;
+  /* Muted text, less focus */
+
   /* Brand Colors */
-  --color-accent: #b8003d;             /* Vibrant deep pink/maroon */
-  --color-accent-hover: #9c0033;       /* Slightly darker hover */
-  --color-logo: #b8003d;               /* Logo color matches accent */
-  --color-button-bg: #b8003d;          /* Button primary bg */
-  --color-button-bg-hover: #9c0033;    /* Button hover bg */
+  --color-accent: #b8003d;
+  /* Vibrant deep pink/maroon */
+  --color-accent-hover: #9c0033;
+  /* Slightly darker hover */
+  --color-logo: #b8003d;
+  /* Logo color matches accent */
+  --color-button-bg: #b8003d;
+  /* Button primary bg */
+  --color-button-bg-hover: #9c0033;
+  /* Button hover bg */
 
   /* Borders and UI */
-  --color-border: #e5e7eb;             /* Light gray borders */
+  --color-border: #e5e7eb;
+  /* Light gray borders */
 
   /* Fonts */
   --font-sans: 'Geist Sans', Arial, Helvetica, sans-serif;
@@ -70,14 +80,15 @@ a {
   text-decoration: none;
   font-weight: 600;
   transition: color 0.3s ease, text-decoration 0.3s ease;
-  outline-offset: 3px; /* for better focus outline visibility */
+  outline-offset: 3px;
+  /* for better focus outline visibility */
 }
 
 a:hover,
 a:focus {
   color: var(--color-accent-hover);
   text-decoration: underline;
-  
+
   outline-offset: 4px;
   outline-radius: 3px;
 }
@@ -85,7 +96,8 @@ a:focus {
 /* Button base styles - classy, modern */
 .btn {
   font-weight: 600;
-  border-radius: 9999px; /* full pill shape */
+  border-radius: 9999px;
+  /* full pill shape */
   padding: 0.75rem 1.5rem;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -108,7 +120,12 @@ a:focus {
 }
 
 /* Responsive typography example */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 700;
   color: var(--color-text-primary);
   letter-spacing: -0.02em;
@@ -116,8 +133,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 2.75rem;
-  line-height: 1.2;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
 }
 
 h2 {

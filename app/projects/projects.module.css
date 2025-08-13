@@ -13,11 +13,10 @@
 }
 
 .header h1 {
-    font-size: clamp(1.8rem, 5vw, 3rem);
+
+    font-size: 1.8rem;
     font-weight: 700;
-    margin-bottom: 0.5rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
+    margin-bottom: 0.8rem;
 }
 
 .header p {
